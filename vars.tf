@@ -111,6 +111,24 @@ variable "function_version" {
   default     = "v1.3.0"
   description = "Instance Scheduler Lambda function version"
 }
+##############################################
+#   Environment Variables                    #
+##############################################
+
+variable "key" {
+  description = "Access Key for Terraform User"
+  type        = string
+}
+
+variable "secret" {
+  description = "Secret Key for Terraform User"
+  type        = string
+}
+
+variable "assumption_role" {
+  description = "ARN of Role to assume"
+  type        = string
+}
 
 variable "region" {
   type        = string
