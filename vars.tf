@@ -111,3 +111,9 @@ variable "function_version" {
   default     = "v1.3.0"
   description = "Instance Scheduler Lambda function version"
 }
+
+variable "region" {
+  type        = string
+  description = "Deployment region"
+  default     = "us-east-1"
+}
